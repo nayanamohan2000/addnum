@@ -6,22 +6,19 @@ void get_input(int *a,int *b)
 printf("enter the value of a and b\n");
 scanf("%d %d",a,b);
 }
-int add_num(int *a,int *b)
+int add_num(int a,int b,int *c) 
 {
-int x;
-x= *a + *b;
-return x;
+*c= a + b;
 }
-void output(int p)
+void output(int c)
 {
- printf("%d",p);
+ printf("%d",c);
 }
 int main()
 {
- int a,b,x;
- get_input(a,b);
+ get_input(&x,&y);
  add_num(a,b);
- output(x);
+ output(c);
 }
 
 
